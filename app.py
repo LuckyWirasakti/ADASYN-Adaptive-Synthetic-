@@ -1,8 +1,8 @@
 
 from flask import Flask, render_template, request
-from jcopml.utils import load_model
 from quoters import Quote
 import pandas as pd
+import pickle
 
 app = Flask(
     __name__, 
@@ -11,7 +11,7 @@ app = Flask(
     template_folder="template"
 )
 
-model = load_model("model/imbalance-handling.pkl")
+model = pickle.load(open(model_path, "rb"))
 
 @app.route("/", methods=["GET","POST"])
 def index():
