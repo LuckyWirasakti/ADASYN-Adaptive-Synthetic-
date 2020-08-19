@@ -10,7 +10,7 @@ app = Flask(
     static_folder="template/assets",
     template_folder="template"
 )
-
+model_path = "model/imbalance-handling.pkl"
 model = pickle.load(open(model_path, "rb"))
 
 @app.route("/", methods=["GET","POST"])
