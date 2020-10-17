@@ -1,5 +1,7 @@
 ## Selamat Datang!
 
+![imbalance handling](./herokuapp.com.jpg)
+
 ### Pratinjau
 
 Kunjungi laman berikut untuk mencoba hasil penelitian ini [klik disini](http://imbalanced.herokuapp.com).
